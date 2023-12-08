@@ -1,4 +1,4 @@
-**AOS C111 Final Project!** <img align="right" width="220" height="220" src="/assets/IMG/template_logo.png">
+**AOS C111 Final Project** <img align="right" width="220" height="220" src="/assets/IMG/template_logo.png">
 
 ### Dataset
 
