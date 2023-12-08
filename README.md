@@ -1,9 +1,13 @@
 **AOS C111 Final Project** <img align="right" width="220" height="220" src="/assets/IMG/template_logo.png">
 
 ### Dataset
+
 Title: NOAA Atlantic Hurricane dataset
+
 Source: [Kaggle](https://www.kaggle.com/datasets/utkarshx27/noaa-atlantic-hurricane-database)
-Access: [Google Drive Link](https://drive.google.com/file/d/1OeIU-Jb_QOmrlhyFNE46cF6oE6BTjIY4/view?usp=sharing) or [Microsoft Excel File](/Dataset.md)
+
+Access: [Google Drive Link](https://drive.google.com/file/d/1OeIU-Jb_QOmrlhyFNE46cF6oE6BTjIY4/view?usp=sharing) or [Microsoft Excel File](/dataset.md)
+
 A link to the dataset you used must be submitted on BruinLearn so that your course instructor can use it to run your code. To do this, it might be easiest to upload the dataset to Google Drive, then share a link (click *Share* then *Copy link*). If your dataset is too big to upload, try to find a way to reduce its size, or speak with your instructor if this is not possible.
 
 ### Report
