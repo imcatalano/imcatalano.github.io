@@ -56,12 +56,12 @@ Figure 4 shows variation but no significant trend. However, Figure 5 shows a sli
 
 
 
-  <img align="center" src="/assets/IMG/windspeedvalues.png">
+  <img align="center" src="/assets/IMG/windspeedvalues (1).png">
   
 *Figure 6: Average, minimum, and maximum wind speed values for each hurricane*
 
 
-  <img align="center" src="/assets/IMG/pressurevalues.png">
+  <img align="center" src="/assets/IMG/pressurevalues (1).png">
   
 *Figure 7: Average, minimum, and maximum pressure values for each hurricane*
 
