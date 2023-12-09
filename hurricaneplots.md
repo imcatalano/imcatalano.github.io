@@ -1,4 +1,4 @@
- <img align="left" src="/assets/HurricaneAlicia.png">
+ <img align="left" scale = '2' src="/assets/HurricaneAlicia.png">
  
  <img align="right" src="/assets/HurricaneAllen.png">
 
