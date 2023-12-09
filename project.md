@@ -16,7 +16,7 @@ I found that ridge regression and MLP regression did not accurately predict the 
 
 ## Data
 
-For my project, I analyzed data collected by the National Oceanic and Atmospheric Administration. This dataset is on kaggle.com, and it includes various measurements of Atlantic Hurricanes that occurred between 1975 and 2021. I chose to focus specifically on the dates, longitude and latitude, wind speed, pressure, and category of each storm. There are 19,066 rows in the dataset that provide information for 258 different hurricanes that occurred over the 46 year timespan. 
+For my project, I analyzed [data](/assets/storms.csv) collected by the National Oceanic and Atmospheric Administration. This dataset is on [kaggle.com](https://www.kaggle.com/datasets/utkarshx27/noaa-atlantic-hurricane-database), and it includes various measurements of Atlantic Hurricanes that occurred between 1975 and 2021. I chose to focus specifically on the dates, longitude and latitude, wind speed, pressure, and category of each storm. There are 19,066 rows in the dataset that provide information for 258 different hurricanes that occurred over the 46 year timespan. 
 
 When preprocessing the data, I removed the columns that I would not be using, and I replaced NA entries in the "category" column with the number 0. I wanted to look at the data for each individual hurricane, so I created a for-loop to iterate through a matrix that I defined as each unique hurricane name from the dataset. Within the for-loop, I cropped the data to focus on an individual hurricane. Next, I calculated the distance traveled by the hurricane from a distance function that I created (see Figure 1) and the maximum category for each hurricane. I then used another function that I had previously created (see Figure 2)  in order to calculate the minimum, average, and maximum values for the wind speed and the pressure of the hurricane. 
 
@@ -29,8 +29,8 @@ When preprocessing the data, I removed the columns that I would not be using, an
   <img align="center" src="/assets/IMG/Screenshot 2023-12-08 232642.png">
 
 
-
 *Figure 2: Mimimum, averages, and maximum values function*
+
 
 
 To get a better understanding of the storm data, I created several different plots:
@@ -40,6 +40,7 @@ To get a better understanding of the storm data, I created several different plo
 *Figure 3: Average pressure values and average wind speed values of tropical storms for each year.*
 
 The graph in Figure 3 shows an inverse relationship between wind speed and pressure.
+
 
 
   <img align="center" src="/assets/IMG/distance1.png">
@@ -52,6 +53,8 @@ The graph in Figure 3 shows an inverse relationship between wind speed and press
 
 Figure 4 shows variation but no significant trend. However, Figure 5 shows a slight increase in the distance traveled by hurricanes every year. The difference between these two charts would imply an increase in the number of storms each year.
 
+
+
   <img align="center" src="/assets/IMG/windspeedvalues.png">
   
 *Figure 6: Average, minimum, and maximum wind speed values for each hurricane*
@@ -59,6 +62,8 @@ Figure 4 shows variation but no significant trend. However, Figure 5 shows a sli
   <img align="center" src="/assets/IMG/pressurevalues.png">
   
 *Figure 7: Average, minimum, and maximum pressure values for each hurricane*
+
+
 
 Figure 6 and Figure 7 also show an inverse relationship between wind speed and pressure. There is minimal variation in minimum wind speeds and maximum pressures, and there is a larger variation in maximum wind speeds and minimum pressures. 
 
