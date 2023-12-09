@@ -6,7 +6,7 @@ My goal for this project was to use machine learning techniques to predict the h
 
 ## Introduction 
 
-Tropical storms and hurricanes are categorized according to the Saffir-Simpson Hurricane Wind Scale [3]. Each hurricane is given a rating from 1 to 5 depending on its sustained wind speeds. Categorizing tropical storms allows for the prediction of damage and hazards, so people living in an area in the path of the storm can prepare for the storm and evacuate if necessary. Tropical storms form over the ocean and then increase in intensity as they move away from their starting point. Therefore, it is difficult to predict what the storm will be like when it reaches inhabited areas. Currently, researchers at  National Aeronautics and Space Administration are working on a machine learning model that can be used to predict the intensity of hurricanes across its life cycle [1].
+Tropical storms and hurricanes are categorized according to the Saffir-Simpson Hurricane Wind Scale [4]. Each hurricane is given a rating from 1 to 5 depending on its sustained wind speeds. Categorizing tropical storms allows for the prediction of damage and hazards, so people living in an area in the path of the storm can prepare for the storm and evacuate if necessary. Tropical storms form over the ocean and then increase in intensity as they move away from their starting point. Therefore, it is difficult to predict what the storm will be like when it reaches inhabited areas. Currently, researchers at  National Aeronautics and Space Administration are working on a machine learning model that can be used to predict the intensity of hurricanes across its life cycle [1].
 
 
 Fortunately, scientists have completed thorough records of every hurricane that they have observed, and I can use one of these datasets to apply my machine learning model to. In order to determine which method to use, I referred to the scikit-learn algorithm cheat sheet [2]. I decided to apply both ridge regression, multi-layer perceptron regression, and logistic regression to the dataset.
@@ -101,15 +101,24 @@ Figure 9 presents a comparison between the ridge regression REC curve, MLP regre
   
 *Figure 10: Confusion Matrix for Logistic Regression*
 
-Figure 10 shows the confusion matrix for the logistic regression model. The highest values on the confusion matrix are 14 correct predictions of a hurricane with no category assigned, and 16 correct predictions of category four hurricanes. The model never predicted category 2 or category 5: the two category 2 hurricanes were predicted by the model to be category 1, and the five category 5 hurricanes were predicted to be category 4. 
+Figure 10 shows the confusion matrix for the logistic regression model. The highest values on the confusion matrix are 14 correct predictions of a hurricane with no category assigned, and 16 correct predictions of category four hurricanes. The model never predicted category 2 or category 5 -- the two category 2 hurricanes were predicted by the model to be category 1, and the five category 5 hurricanes were predicted to be category 4. 
 
 
 
 ## Discussion
 
+In Figure 8, one can see that the accuracy of the ridge regression model reaches its maximum value at around 55%, so I can conclude that the ridge regression model is correct only half of the time. Figure 9 shows that the REC curves for both MLP regressors converge to the same maximum accuracy, but both models show a greater increase in accuracy within the first 25 iterations. The RMSE for the linear regressor, MLP regressor 1, and MLP regressor 2 are 0.4005, 0.3842, and 0.2927 respectively, so I can conclude that using the MLP regressor produces a more accurate model. Additionally, a MLP regressor model with three hidden layers of 100 neurons will be more accurate than a MPL regressor with only one hidden layer of 100 neurons. However, none of these three models are able to predict the hurricane category with higher than 60% accuracy. While this value is greater than the 20% chance someone has of randomly guessing a hurricane’s category, the model can still be improved. 
+
+
+I applied logistic regression to the hurricane data in order to predict the target variable, which in this case was the category of the hurricane. For the 52 samples in the test data set, the model correctly predicted the category of 34 hurricanes, which corresponds to 65.38% accuracy. This value is still not ideal, but it is at least 10% greater than the accuracy shown by the REC curves for ridge regression and MLP regression. 
+
 
 
 ## Conclusion
+
+From applying these machine learning techniques, the highest accuracy of a model that I could get was 65%. I believe this was partly because of the way I processed the dataset before applying the machine learning methods. The initial dataset had 19,000 rows of data, but I wanted to look at each individual hurricane. There were measurements for 258 hurricanes in the data, so this was my sample size. This sample size resulted in a training data set with only 52 rows. To adjust for this, I could use hurricane data from 1851 [3] and make calculations for every recorded hurricane since that year. I could also use the full data set, and I could incorporate the year, day, and time data into the model. 
+
+I can conclude that machine learning methods can be used to create a model that can predict the category of a hurricane. However, there are several variables besides the ones that I used that need to be considered in the model. I think that the ideal model will be able to predict the maximum wind speed, the distance traveled, and the category of a hurricane depending on its starting position and its initial wind speed, as well as factors unrelated to the hurricane such as atmospheric conditions. 
 
 
 ## References
@@ -117,7 +126,9 @@ Figure 10 shows the confusion matrix for the logistic regression model. The high
 
 [2] “Choosing the Right Estimator.” Scikit, scikit-learn.org/stable/tutorial/machine_learning_map/index.html. Accessed 8 Dec. 2023. 
 
-[3] Saffir-Simpson Hurricane Wind Scale, www.nhc.noaa.gov/aboutsshws.php. Accessed 8 Dec. 2023. 
+[3] Re-analysis Project, https://www.aoml.noaa.gov/hrd/data_sub/re_anal.html. Accessed 8 Dec. 2023.
+
+[4] Saffir-Simpson Hurricane Wind Scale, www.nhc.noaa.gov/aboutsshws.php. Accessed 8 Dec. 2023. 
 
 
 [back](./)
