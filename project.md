@@ -24,6 +24,7 @@ When preprocessing the data, I removed the columns that I would not be using, an
 
 *Figure 1: Distance function*
 
+  <img align="center" src="/assets/IMG/Screenshot 2023-12-08 232642.png">
 [](assets/IMG/Screenshot 2023-12-08 232642.png){: width="250" }
 *Figure 2: Mimimum, averages, and maximum values function*
 
