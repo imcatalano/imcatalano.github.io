@@ -14,9 +14,8 @@ Access: [Google Drive Link](https://drive.google.com/file/d/1OeIU-Jb_QOmrlhyFNE4
 [Final Project Report](/project.md)
 
 
-[PDF File](/assets/Catalano_FinalProjectReport.pdf)
-
 ### Code
 
 [Google Colab Notebook](https://colab.research.google.com/drive/1evF4vTVmq0l2szgL2GTCsUIQH87gyF8F?usp=sharing)
+
 
