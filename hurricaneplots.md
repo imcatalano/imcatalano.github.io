@@ -1,7 +1,7 @@
  <img align="left" scale = '2' src="/assets/HurricaneAlicia.png">
  
- <img align="right" src="/assets/HurricaneAllen.png">
+ <img align="left" src="/assets/HurricaneAllen.png">
 
  <img align="left" src="/assets/HurricaneAmy.png">
  
- <img align="right" src="/assets/HurricaneAnita.png">
+ <img align="left" src="/assets/HurricaneAnita.png">
