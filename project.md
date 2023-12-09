@@ -72,27 +72,27 @@ Before applying the regression model, I combined the values I had calculated fro
 
 ## Modeling
 
-The goal was to apply a machine learning model that would make a prediction based on known data, so I used supervised machine learning. The dataset was large and I was predicting one variable (category) from seven other variables. I also wanted to determine the accuracy of a machine learning model. Therefore, I applied ridge regression and MLP regression, which would yeild a REC curve, and I applied logistic regression, which would produce a confusion matrix. To create the REC curve for ridge regression (Figure 8), I tried various values for the maximum tolerance in an attempt to increase the accuracy of the model's prediction. However, the REC curve converged to a value below 60% regardless of the tolerance. I decided on a tolerance of 80, which would show enough of this convergence in order to understand the graph's behavior. Next, I applied MLP regression and compared the REC curve for this model to the curve for ridge regression. For the first MLP regressor, I did not define the size of the hidden layers, but for the second MLP regressor, I defined the hidden layer size to be one hidden layer with 10 neurons. For logistic regression, I set the maximum number of iterations to be 5000 to allow for model optimization.
+The goal was to apply a machine learning model that would make a prediction based on known data, so I used supervised machine learning. The dataset was large and I was predicting one variable (hurricane category) from seven other variables. I also wanted to determine the accuracy of a machine learning model. Therefore, I applied ridge regression and MLP regression, which would yield a REC curve, and I applied logistic regression, which would produce a confusion matrix. For both models, I set the maximum number of iterations to be 5000 to allow for model optimization. For the ridge regression, I minimized the root mean square error (RMSE) by defining alpha as 0.01. To create the REC curve for ridge regression (Figure 8), I tried various values for the maximum tolerance in an attempt to increase the accuracy of the model's prediction. However, the REC curve converged to a value below 60% regardless of the tolerance. I decided on a tolerance of 75, which would show enough of this convergence in order to understand the graph's behavior. Next, I applied MLP regression and compared the REC curve for this model to the curve for ridge regression. For the first MLP regressor, I did not define the size of the hidden layers, but for the second MLP regressor, I defined the perceptron as having three hidden layers with 100 neurons in each layer. 
 
 
 ## Results
 
 ### Linear Regression
 
-  <img align="center" src="/assets/IMG/RidgeRegression (2).png">
+  <img align="center" src="/assets/IMG/RidgeRegression (4).png">
   
-*Figure 8: REC Curve for Linear Regression*
+*Figure 8: REC Curve for Ridge Regression*
 
-Figure 8 shows the REC curve for ridge regression converging below a value of 60 for the percentage of correct predictions. The ridge regression model produced a root mean square error (RMSE) of about 0.4147.
+Figure 8 shows the REC curve for ridge regression converging below a value of 60 for the percentage of correct predictions. The ridge regression model produced a RMSE of about 0.4005.
 
 
 ### Multi-Layer Preceptron Regression
 
-  <img align="center" src="/assets/IMG/MLPCurve (1).png">
+  <img align="center" src="/assets/IMG/MLPCurve (3).png">
   
 *Figure 9: REC Curve for MLP Regression*
 
-Figure 9 presents a comparision between the ridge regression REC curve, MLP regression with the default value of one hidden layer with 100 perceptrons, and MLP regression a hidden layer with 10 perceptrons. The RMSE for the first MLP regression model was about 0.3675, and the RMSE for the second MLP regression model was about 0.4168, which is closer to the RMSE for the ridge regression model. 
+Figure 9 presents a comparison between the ridge regression REC curve, MLP regression with the default value of one hidden layer with 100 perceptrons, and MLP regression with a hidden layer with 10 perceptrons. The RMSE for the first MLP regression model was about 0.3842, and the RMSE for the second MLP regression model was about 0.2927.
 
 
 ### Confusion Matrix
@@ -104,7 +104,9 @@ Figure 9 presents a comparision between the ridge regression REC curve, MLP regr
 Figure 10 shows the confusion matrix for the logistic regression model. The highest values on the confusion matrix are 14 correct predictions of a hurricane with no category assigned, and 16 correct predictions of category four hurricanes. The model never predicted category 2 or category 5: the two category 2 hurricanes were predicted by the model to be category 1, and the five category 5 hurricanes were predicted to be category 4. 
 
 
+
 ## Discussion
+
 
 
 ## Conclusion
