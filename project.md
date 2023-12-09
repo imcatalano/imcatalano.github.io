@@ -64,17 +64,23 @@ Before applying the regression model, I combined the values I had calculated fro
 ## Modeling
 
 Linear Regression
+
   <img align="center" src="/assets/IMG/RidgeRegression (2).png">
+  
 *Figure 8: REC Curve for Linear Regression*
 
 
 MLP Regression
+
   <img align="center" src="/assets/IMG/MLPCurve (1).png">
+  
 *Figure 9: REC Curve for MLP Regression*
 
 
 Confusion Matrix
+
   <img align="center" src="/assets/IMG/ConfusionMatrix.png">
+  
 *Figure 10: Confusion Matrix for Logistic Regression*
 
 ## Results
