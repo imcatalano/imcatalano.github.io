@@ -29,6 +29,7 @@ When preprocessing the data, I removed the columns that I would not be using, an
 
 To get a better understanding of the storm data, I created several different plots:
 
+assets/IMG/AverageValues (1).png
 [](assets/IMG/AverageValues (1).png){: width="750" }
 *Figure 3: Average pressure values and average wind speed values of tropical storms for each year.*
 
