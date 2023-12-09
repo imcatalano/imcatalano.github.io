@@ -79,7 +79,7 @@ MLP Regression
 
 Confusion Matrix
 
-  <img align="center" src="/assets/IMG/ConfusionMatrix.png">
+  <img align="center" src="/assets/IMG/ConfusionMatrix (2).png">
   
 *Figure 10: Confusion Matrix for Logistic Regression*
 
