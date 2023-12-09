@@ -59,7 +59,7 @@ Figure 4 shows variation but no significant trend. However, Figure 5 shows a sli
 
 Figure 6 and Figure 7 also show an inverse relationship between wind speed and pressure. There is minimal variation in minimum wind speeds and maximum pressures, and there is a larger variation in maximum wind speeds and minimum pressures. 
 
-Before applying the regression model, I combined the values I had calculated from the original dataset into a [new dataset](dataset1.md).
+Before applying the regression model, I combined the values I had calculated from the original dataset into a [new dataset](dataset2).
 
 ## Modeling
 
