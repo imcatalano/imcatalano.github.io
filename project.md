@@ -21,17 +21,19 @@ For my project, I analyzed data collected by the National Oceanic and Atmospheri
 When preprocessing the data, I removed the columns that I would not be using, and I replaced NA entries in the "category" column with the number 0. I wanted to look at the data for each individual hurricane, so I created a for-loop to iterate through a matrix that I defined as each unique hurricane name from the dataset. Within the for-loop, I cropped the data to focus on an individual hurricane. Next, I calculated the distance traveled by the hurricane from a distance function that I created (see [Figure 1](assets/IMG/Screenshot 2023-12-08 232659.png) and the maximum category for each hurricane. I then used another function that I had previously created (see [Figure 2](assets/IMG/Screenshot 2023-12-08 232642.png)  in order to calculate the minimum, average, and maximum values for the wind speed and the pressure of the hurricane. 
 
  <img align="center" width="500" height="500" src="/assets/IMG/Screenshot 2023-12-08 232642.png">
-
+ 
 *Figure 1: Distance function*
 
+
   <img align="center" src="/assets/IMG/Screenshot 2023-12-08 232642.png">
-[](assets/IMG/Screenshot 2023-12-08 232642.png){: width="250" }
+
+
 *Figure 2: Mimimum, averages, and maximum values function*
 
 To get a better understanding of the storm data, I created several different plots:
 
-assets/IMG/AverageValues (1).png
-[](assets/IMG/AverageValues (1).png){: width="750" }
+<img align="center" src="/assets/IMG/AverageValues (1).png">
+
 *Figure 3: Average pressure values and average wind speed values of tropical storms for each year.*
 
 The graph in Figure 3 shows an inverse relationship between wind speed and pressure.
