@@ -20,7 +20,7 @@ For my project, I analyzed data collected by the National Oceanic and Atmospheri
 
 When preprocessing the data, I removed the columns that I would not be using, and I replaced NA entries in the "category" column with the number 0. I wanted to look at the data for each individual hurricane, so I created a for-loop to iterate through a matrix that I defined as each unique hurricane name from the dataset. Within the for-loop, I cropped the data to focus on an individual hurricane. Next, I calculated the distance traveled by the hurricane from a distance function that I created (see [Figure 1](assets/IMG/Screenshot 2023-12-08 232659.png) and the maximum category for each hurricane. I then used another function that I had previously created (see [Figure 2](assets/IMG/Screenshot 2023-12-08 232642.png)  in order to calculate the minimum, average, and maximum values for the wind speed and the pressure of the hurricane. 
 
-<img align="right" width="250" height="220" src="/assets/IMG/Screenshot 2023-12-08 232659.png>
+<img align="left" width="250" height="220" src="/assets/IMG/Screenshot 2023-12-08 232659.png>
 *Figure 1: Distance function*
 
 [](assets/IMG/Screenshot 2023-12-08 232642.png){: width="250" }
