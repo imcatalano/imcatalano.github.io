@@ -25,10 +25,13 @@ When preprocessing the data, I removed the columns that I would not be using, an
 *Figure 1: Distance function*
 
 
+
   <img align="center" src="/assets/IMG/Screenshot 2023-12-08 232642.png">
 
 
+
 *Figure 2: Mimimum, averages, and maximum values function*
+
 
 To get a better understanding of the storm data, I created several different plots:
 
@@ -61,30 +64,39 @@ Figure 6 and Figure 7 also show an inverse relationship between wind speed and p
 
 Before applying the regression model, I combined the values I had calculated from the original dataset into a [new dataset](/dataset2.csv).
 
+
 ## Modeling
 
-Linear Regression
+The goal was to apply a machine learning model that would make a prediction based on known data, so I used supervised machine learning. The dataset was large and I was predicting one variable (category) from seven other variables. I also wanted to determine the accuracy of a machine learning model. Therefore, I applied ridge regression and MLP regression, which would yeild a REC curve, and I applied logistic regression, which would produce a confusion matrix. To create the REC curve for ridge regression (Figure 8), I tried various values for the maximum tolerance in an attempt to increase the accuracy of the model's prediction. However, the REC curve converged to a value below 60% regardless of the tolerance. I decided on a tolerance of 80, which would show enough of this convergence in order to understand the graph's behavior. Next, I applied MLP regression and compared the REC curve for this model to the curve for ridge regression. For the first MLP regressor, I did not define the size of the hidden layers, but for the second MLP regressor, I defined the hidden layer size to be one hidden layer with 10 neurons. For logistic regression, I set the maximum number of iterations to be 5000 to allow for model optimization.
+
+
+## Results
+
+# Linear Regression
 
   <img align="center" src="/assets/IMG/RidgeRegression (2).png">
   
 *Figure 8: REC Curve for Linear Regression*
 
+Figure 8 shows the REC curve for ridge regression converging below a value of 60 for the percentage of correct predictions. The ridge regression model produced a root mean square error (RMSE) of about 0.4147.
 
-MLP Regression
+
+# MLP Regression
 
   <img align="center" src="/assets/IMG/MLPCurve (1).png">
   
 *Figure 9: REC Curve for MLP Regression*
 
+Figure 9 presents a comparision between the ridge regression REC curve, MLP regression with the default value of one hidden layer with 100 perceptrons, and MLP regression a hidden layer with 10 perceptrons. The RMSE for the first MLP regression model was about 0.3675, and the RMSE for the second MLP regression model was about 0.4168, which is closer to the RMSE for the ridge regression model. 
 
-Confusion Matrix
+
+# Confusion Matrix
 
   <img align="center" src="/assets/IMG/ConfusionMatrix (2).png">
   
 *Figure 10: Confusion Matrix for Logistic Regression*
 
-## Results
-
+Figure 10 shows the confusion matrix for the logistic regression model. The highest values on the confusion matrix are 14 correct predictions of a hurricane with no category assigned, and 16 correct predictions of category four hurricanes. The model never predicted category 2 or category 5: the two category 2 hurricanes were predicted by the model to be category 1, and the five category 5 hurricanes were predicted to be category 4. 
 
 
 ## Discussion
