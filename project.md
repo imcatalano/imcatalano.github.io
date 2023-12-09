@@ -1,6 +1,6 @@
 ## Hurricanes and Tropical Storms
 
-My goal for this project was to use machine learning techniques to predict the highest category of a hurricane based on other measurements, including position, wind speed, and pressure. 
+My goal for this project was to use machine learning techniques to predict the highest category of a hurricane based on other measurements, including distance traveled, wind speed, and pressure. 
 
 ***
 
