@@ -20,7 +20,7 @@ For my project, I analyzed data collected by the National Oceanic and Atmospheri
 
 When preprocessing the data, I removed the columns that I would not be using, and I replaced NA entries in the "category" column with the number 0. I wanted to look at the data for each individual hurricane, so I created a for-loop to iterate through a matrix that I defined as each unique hurricane name from the dataset. Within the for-loop, I cropped the data to focus on an individual hurricane. Next, I calculated the distance traveled by the hurricane from a distance function that I created (see [Figure 1](assets/IMG/Screenshot 2023-12-08 232659.png) and the maximum category for each hurricane. I then used another function that I had previously created (see [Figure 2](assets/IMG/Screenshot 2023-12-08 232642.png)  in order to calculate the minimum, average, and maximum values for the wind speed and the pressure of the hurricane. 
 
- <img align="center" width="500" height="500" src="/assets/IMG/Screenshot 2023-12-08 232642.png">
+ <img align="center" src="/assets/IMG/Screenshot 2023-12-08 232642.png">
  
 *Figure 1: Distance function*
 
@@ -32,25 +32,29 @@ When preprocessing the data, I removed the columns that I would not be using, an
 
 To get a better understanding of the storm data, I created several different plots:
 
-<img align="center" src="/assets/IMG/AverageValues (1).png">
+  <img align="center" src="/assets/IMG/AverageValues (1).png">
 
 *Figure 3: Average pressure values and average wind speed values of tropical storms for each year.*
 
 The graph in Figure 3 shows an inverse relationship between wind speed and pressure.
 
 
-[](assets/IMG/distance1.png){: width="750" }
+  <img align="center" src="/assets/IMG/distance1.png">
+
 *Figure 4: Distance traveled by each storm*
 
-[](assets/IMG/distance2.png){: width="750" }
+  <img align="center" src="/assets/IMG/distance2.png">
+
 *Figure 5: Distance traveled by storms each year*
 
 Figure 4 shows variation but no significant trend. However, Figure 5 shows a slight increase in the distance traveled by hurricanes every year. The difference between these two charts would imply an increase in the number of storms each year.
 
-[](assets/IMG/windspeedvalues.png){: width="750" }
+  <img align="center" src="/assets/IMG/windspeedvalues.png">
+  
 *Figure 6: Average, minimum, and maximum wind speed values for each hurricane*
 
-[](assets/IMG/pressurevalues.png){: width="750" }
+  <img align="center" src="/assets/IMG/pressurevalues.png">
+  
 *Figure 7: Average, minimum, and maximum pressure values for each hurricane*
 
 Figure 6 and Figure 7 also show an inverse relationship between wind speed and pressure. There is minimal variation in minimum wind speeds and maximum pressures, and there is a larger variation in maximum wind speeds and minimum pressures. 
@@ -60,15 +64,17 @@ Before applying the regression model, I combined the values I had calculated fro
 ## Modeling
 
 Linear Regression
-[](assets/IMG/RidgeRegression (2).png){: width="750" }
+  <img align="center" src="/assets/IMG/RidgeRegression (2).png">
 *Figure 8: REC Curve for Linear Regression*
 
+
 MLP Regression
-[](assets/IMG/MLPCurve (1).png){: width="750" }
+  <img align="center" src="/assets/IMG/MLPCurve (1).png">
 *Figure 9: REC Curve for MLP Regression*
 
+
 Confusion Matrix
-[](assets/IMG/ConfusionMatrix.png){: width="500" }
+  <img align="center" src="/assets/IMG/ConfusionMatrix.png">
 *Figure 10: Confusion Matrix for Logistic Regression*
 
 ## Results
