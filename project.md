@@ -47,6 +47,7 @@ The graph in Figure 3 shows an inverse relationship between wind speed and press
 
 *Figure 4: Distance traveled by each storm*
 
+
   <img align="center" src="/assets/IMG/distance2.png">
 
 *Figure 5: Distance traveled by storms each year*
@@ -59,6 +60,7 @@ Figure 4 shows variation but no significant trend. However, Figure 5 shows a sli
   
 *Figure 6: Average, minimum, and maximum wind speed values for each hurricane*
 
+
   <img align="center" src="/assets/IMG/pressurevalues.png">
   
 *Figure 7: Average, minimum, and maximum pressure values for each hurricane*
@@ -67,7 +69,7 @@ Figure 4 shows variation but no significant trend. However, Figure 5 shows a sli
 
 Figure 6 and Figure 7 also show an inverse relationship between wind speed and pressure. There is minimal variation in minimum wind speeds and maximum pressures, and there is a larger variation in maximum wind speeds and minimum pressures. 
 
-Before applying the regression model, I combined the values I had calculated from the original dataset into a [new dataset](/dataset2.csv).
+Before applying the regression model, I combined the values I had calculated from the original dataset into a [new dataset](https://drive.google.com/file/d/1h9_7LydGUO_05peOVP63XcDbiAtITRB9/view?usp=sharing).
 
 
 ## Modeling
