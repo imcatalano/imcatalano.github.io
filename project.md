@@ -77,7 +77,7 @@ The goal was to apply a machine learning model that would make a prediction base
 
 ## Results
 
-# Linear Regression
+### Linear Regression
 
   <img align="center" src="/assets/IMG/RidgeRegression (2).png">
   
@@ -86,7 +86,7 @@ The goal was to apply a machine learning model that would make a prediction base
 Figure 8 shows the REC curve for ridge regression converging below a value of 60 for the percentage of correct predictions. The ridge regression model produced a root mean square error (RMSE) of about 0.4147.
 
 
-# MLP Regression
+### Multi-Layer Preceptron Regression
 
   <img align="center" src="/assets/IMG/MLPCurve (1).png">
   
@@ -95,7 +95,7 @@ Figure 8 shows the REC curve for ridge regression converging below a value of 60
 Figure 9 presents a comparision between the ridge regression REC curve, MLP regression with the default value of one hidden layer with 100 perceptrons, and MLP regression a hidden layer with 10 perceptrons. The RMSE for the first MLP regression model was about 0.3675, and the RMSE for the second MLP regression model was about 0.4168, which is closer to the RMSE for the ridge regression model. 
 
 
-# Confusion Matrix
+### Confusion Matrix
 
   <img align="center" src="/assets/IMG/ConfusionMatrix (2).png">
   
