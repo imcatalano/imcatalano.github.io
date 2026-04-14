@@ -1,4 +1,4 @@
-**Atmospheric and Oceanic Sciences C111 Final Project** <img align="right" width="220" height="220" src="/assets/IMG/template_logo.png">
+**Atmospheric and Oceanic Sciences C111 Final Project** <img align="right" width="220" height="220" src="/assets/IMG/4-40467_storm-clipart-tropical-storm-hurricane-png.png">
 
 ### Dataset
 
