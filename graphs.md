@@ -1,1 +1,1 @@
-<img align="right" width="220" height="220" src="/assets/IMG/4-40467_storm-clipart-tropical-storm-hurricane-png.png">
+<img align="center" width="220" height="220" src="/assets/IMG/HurricaneAlicia.png">
