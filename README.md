@@ -1,4 +1,4 @@
-**AOS C111 Final Project** <img align="right" width="220" height="220" src="/assets/IMG/template_logo.png">
+**Atmospheric and Oceanic Sciences C111 Final Project** <img align="right" width="220" height="220" src="/assets/IMG/template_logo.png">
 
 ### Dataset
 
@@ -13,6 +13,8 @@ Access: [Google Drive Link](https://drive.google.com/file/d/1OeIU-Jb_QOmrlhyFNE4
 
 [Final Project Report](/project.md)
 
+### Hurricane Graphs
+[Hurricane Graphs](/graphs.md)
 
 ### Code
 
