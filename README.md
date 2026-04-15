@@ -13,7 +13,7 @@ Access: [Google Drive Link](https://drive.google.com/file/d/1OeIU-Jb_QOmrlhyFNE4
 
 [Final Project Report](/project.md)
 
-### Hurricane Graphs
+### Supplementary Figures
 [Hurricane Graphs](/graphs.md)
 
 ### Code
