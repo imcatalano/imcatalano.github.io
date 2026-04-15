@@ -1,2 +1,2 @@
-<img align="center" src="/assets/HurricaneAmy.png">
-<img align="center" src="/assets/HurricaneBlanche.png">
+<img align="left" src="/assets/HurricaneAmy.png">
+<img align="right" src="/assets/HurricaneBlanche.png">
